@@ -1,0 +1,12 @@
+{
+  "name": "PW-17-AO",
+  "version": "1.0.0",
+  "description": "PW 17 - Pagina web per il download dei report di sostenibilità di Asdomar",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.mjs"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
