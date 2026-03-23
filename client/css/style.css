@@ -1,0 +1,188 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #f5f0e8;
+    color: #333;
+    overflow-x: hidden; 
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, .brand-text, .section-title, .sea-main, .stat-value {
+    font-family: 'Playfair Display', serif;
+}
+
+#mainNav {
+    background: rgba(10,30,60,0.92);
+    padding: 1rem 0;
+    transition: all .3s;
+}
+#mainNav.scrolled {
+    padding: .5rem 0;
+    box-shadow: 0 2px 20px rgba(0,0,0,.3);
+}
+.brand-text { font-size: 1.4rem; letter-spacing: 2px; color: #fff; }
+.brand-sub { font-size: 0.7rem; letter-spacing: 3px; opacity: 0.6; color: #fff; }
+
+#mainNav .nav-link {
+    font-weight: 600; font-size: .8rem;
+    text-transform: uppercase; letter-spacing: 1.5px;
+    transition: color 0.3s;
+    color: rgba(255,255,255,0.7);
+}
+#mainNav .nav-link:hover, 
+#mainNav .nav-link.active { color: #FFB300; }
+
+.sea-section {
+    min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #001a33 0%, #003d6b 40%, #0077b6 70%, #00b4d8 100%);
+    text-align: center; color: #fff;
+}
+
+.sea-content { position: relative; z-index: 2; padding: 2rem; }
+.sea-pre { font-size: 0.9rem; letter-spacing: 5px; text-transform: uppercase; opacity: 0.7; display: block; margin-bottom: 0.5rem; }
+.sea-main { font-size: 4rem; letter-spacing: 8px; display: block; animation: fadeUp 0.8s ease both; }
+.sea-sub { font-size: 1rem; letter-spacing: 4px; opacity: 0.6; display: block; margin-top: 0.5rem; }
+.sea-desc { font-weight: 300; max-width: 580px; margin: 1.5rem auto 2rem; opacity: 0.8; line-height: 1.8; }
+
+.sea-btn {
+    border-radius: 50px; padding: 0.75rem 2rem;
+    font-weight: 600; font-size: 0.85rem;
+    text-transform: uppercase; letter-spacing: 1.5px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+.sea-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); }
+
+.bubble {
+    position: absolute; border-radius: 50%;
+    background: rgba(255, 255, 255, 0.344);
+    animation: rise linear infinite;
+}
+@keyframes rise {
+    0% { transform: translateY(0) scale(1); opacity: 0.6; }
+    100% { transform: translateY(-100vh) scale(1.3); opacity: 0; }
+}
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section { padding: 6rem 0; }
+
+.section-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #1565a0, #00897B);
+    color: #fff; padding: 0.35rem 1.1rem;
+    border-radius: 50px; font-size: 0.72rem;
+    font-weight: 700; text-transform: uppercase;
+    letter-spacing: 2px; margin-bottom: 1rem;
+}
+.tag-light { background: rgba(255,255,255,0.15); border: 1px solid rgba(255,255,255,0.3); }
+
+.section-title { font-size: 2.2rem; color: #0a1e3c; }
+.text-white-section .section-title { color: #fff; }
+
+.section-divider {
+    width: 50px; height: 3px;
+    background: linear-gradient(90deg, #2196F3, #00897B);
+    margin: 0.8rem auto; border-radius: 2px;
+}
+.divider-light { background: linear-gradient(90deg, #FFB300, #FF7043); }
+
+
+.azienda-section { background: #f5f0e8; }
+.sostenibilita-section, .report-section {
+    background: linear-gradient(135deg, #0c3d6e 0%, #1565a0 100%);
+    color: #fff;
+}
+.text-white-section { color: #fff; }
+
+
+.info-card, .stat-card, .activity-card, .pillar-card, .report-card {
+    border-radius: 14px;
+    padding: 1.8rem;
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.info-card, .stat-card, .activity-card {
+    background: #fff;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+}
+.info-card:hover, .activity-card:hover { transform: translateY(-4px); box-shadow: 0 8px 28px rgba(0,0,0,0.12); }
+
+.info-card { border-left: 4px solid #2196F3; }
+.info-card h3, .activity-card h4 { color: #0a1e3c; margin-bottom: 0.8rem; }
+.info-card p, .activity-card p { color: #555; font-size: 0.93rem; }
+
+.stat-card { text-align: center; }
+.stat-icon { font-size: 1.7rem; color: #2196F3; margin-bottom: 0.4rem; }
+.stat-value { font-size: 1.7rem; color: #0a1e3c; }
+.stat-label { font-size: 0.72rem; color: #999; text-transform: uppercase; letter-spacing: 1px; font-weight: 600; }
+
+.activity-card i { font-size: 1.8rem; color: #2196F3; margin-bottom: 0.8rem; display: block; }
+
+.pillar-card, .report-card { color: #fff; }
+
+.pillar-card {
+    background: linear-gradient(180deg,#0b5fb6,#084a94);
+    text-align: center;
+}
+.pillar-card:hover { background: rgba(255,255,255,0.15); }
+.pillar-icon { font-size: 2.2rem; margin-bottom: 0.8rem; }
+.pillar-card h4 { color: #FFB300; margin-bottom: 0.6rem; }
+.pillar-card p { font-size: 0.88rem; opacity: 0.82; }
+
+.report-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex; flex-direction: column;
+}
+.report-card:hover { background: rgba(255,255,255,0.18); }
+.report-year {
+    background: #FFB300; color: #0a1e3c;
+    padding: 0.25rem 0.9rem; border-radius: 50px;
+    font-weight: 800; font-size: 0.82rem; margin-bottom: 0.8rem; width: fit-content;
+}
+.report-card h3 { font-size: 1.2rem; margin-bottom: 0.8rem; }
+.report-card p { font-size: 0.88rem; opacity: 0.82; flex-grow: 1; }
+
+.report-highlights { list-style: none; padding: 0; margin: 0.8rem 0; }
+.report-highlights li {
+    padding: 0.35rem 0; font-size: 0.83rem; opacity: 0.78;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.report-highlights li:last-child { border: none; }
+.report-highlights li i { color: #FFB300; margin-right: 0.4rem; }
+
+.report-download-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    background: #FFB300; color: #0a1e3c;
+    padding: 0.6rem 1.4rem; border-radius: 50px;
+    text-decoration: none; font-weight: 700;
+    font-size: 0.82rem; text-transform: uppercase;
+    letter-spacing: 1px; transition: all .3s; margin-top: 1rem;
+    width: fit-content;
+}
+.report-download-btn:hover { background: #fff; transform: translateY(-2px); }
+.report-download-btn i { margin-right: 0.4rem; }
+
+.footer-content { background: #0a1e3c; padding: 3rem 0 2rem; color: #fff; }
+.footer-content h5 { margin-bottom: 1rem; }
+.footer-link {
+    color: rgba(255,255,255,0.45); text-decoration: none;
+    display: block; padding: 0.2rem 0; font-size: 0.88rem; transition: color .3s;
+}
+.footer-link:hover { color: #FFB300; }
+
+.fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+
+
+
