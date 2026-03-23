@@ -3,10 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asdomar - Report di Sostenibilità</title>
-    <link rel="stylesheet" href="styles.css">   
+    <title>PW Asdomar Report Sostenibilità</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <h1> prova </h1>
-</body>
+   
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-water me-2"></i>
+                <span class="brand-text">ASDOMAR</span>
+                <span class="brand-sub ms-2">Sostenibilità</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sea">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#azienda">L'Azienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sostenibilita">Sostenibilità</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#attivita">Attività</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#report">Report</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="sea" class="sea-section">
+        <!-- bolle animate -->
+        <div class="bubble" style="width:20px;height:20px;left:10%;bottom:10%;animation-duration:8s;animation-delay:0s"></div>
+        <div class="bubble" style="width:12px;height:12px;left:25%;bottom:5%;animation-duration:6s;animation-delay:1s"></div>
+        <div class="bubble" style="width:30px;height:30px;left:50%;bottom:8%;animation-duration:10s;animation-delay:0.5s"></div>
+        <div class="bubble" style="width:15px;height:15px;left:70%;bottom:3%;animation-duration:7s;animation-delay:0.5s"></div>
+        <div class="bubble" style="width:25px;height:25px;left:85%;bottom:8%;animation-duration:9s;animation-delay:3s"></div>
+        <div class="bubble" style="width:10px;height:10px;left:40%;bottom:6%;animation-duration:5s;animation-delay:1.5s"></div>
+        <div class="bubble" style="width:25px;height:25px;left:30%;bottom:10%;animation-duration:9s;animation-delay:3s"></div>
+        <div class="bubble" style="width:10px;height:10px;left:90%;bottom:6%;animation-duration:5s;animation-delay:1.5s"></div>
+        <div class="bubble" style="width:25px;height:25px;left:54%;bottom:1%;animation-duration:9s;animation-delay:3s"></div>
+        <div class="bubble" style="width:30px;height:30px;left:34%;bottom:7%;animation-duration:5s;animation-delay:1.5s"></div>
+
+        <div class="sea-content">
+            <h1 class="sea-title">
+                <span class="sea-pre">Report di Sostenibilità</span>
+                <span class="sea-main">ASDOMAR</span>
+                <span class="sea-sub">General Conserve S.p.A.</span>
+            </h1>
+            <p class="sea-desc">Dal mare alla tavola, con rispetto per l'ambiente e le persone.<br>Scopri l'impegno di Asdomar per un futuro sostenibile.</p>
+            <div class="sea-buttons">
+                <a href="#report" class="btn btn-light btn-lg me-3 sea-btn">
+                    <i class="bi bi-download me-2"></i>Scarica i Report
+                </a>
+                <a href="#azienda" class="btn btn-outline-light btn-lg sea-btn">
+                    <i class="bi bi-info-circle me-2"></i>Scopri di più
+                </a>
+            </div>
+        </div>
+    </section>
+      
+    <section id="azienda" class="py-5 azienda-section"> 
+      <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag"><i class="bi bi-building me-2"></i>L'Azienda</span>
+                <h2 class="section-title">General Conserve S.p.A.</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <div class="info-card fade-in">
+                        <h3><i class="bi bi-globe-europe-africa me-2"></i>Chi è Asdomar</h3>
+                        <p>
+                            <strong>Asdomar</strong> è il marchio principale di <strong>General Conserve S.p.A.</strong>, azienda italiana 
+                            leader nel settore delle conserve ittiche con sede a <strong>Genova</strong>. Si distingue per il suo impegno 
+                            verso la <strong>pesca sostenibile</strong> e la <strong>trasparenza</strong> verso i consumatori.
+                        </p>
+                        <p>
+                            L'azienda opera nel <strong>settore primario</strong>, occupandosi della lavorazione e conservazione di tonno, 
+                            sgombro e altri prodotti del mare. La filiera produttiva è interamente tracciabile. In ogni confezione è 
+                            presente una <strong>lettera al consumatore</strong> che spiega l'origine del prodotto.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="stat-card fade-in"><i class="bi bi-geo-alt-fill stat-icon"></i><div class="stat-value">Genova</div><div class="stat-label">Sede principale</div></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card fade-in"><i class="bi bi-award-fill stat-icon"></i><div class="stat-value">MSC</div><div class="stat-label">Pesca sostenibile</div></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card fade-in"><i class="bi bi-recycle stat-icon"></i><div class="stat-value">100%</div><div class="stat-label">Pack riciclabile</div></div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stat-card fade-in"><i class="bi bi-heart-fill stat-icon"></i><div class="stat-value">FOS</div><div class="stat-label">Friend of the Sea</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="sostenibilita" class="py-5 sostenibilita-section">
+      <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag tag-light"><i class="bi bi-leaf me-2"></i>Sostenibilità</span>
+                <h2 class="section-title text-white">L'Impegno per il Pianeta</h2>
+                <div class="section-divider divider-light"></div>
+                <p class="text-white-50 mt-3 mx-auto" style="max-width:700px">
+                    Asdomar crede in un modello di business che coniuga qualità dei prodotti con il rispetto 
+                    per l'ambiente marino, le comunità di pescatori e i consumatori.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="pillar-card fade-in">
+                        <div class="pillar-icon">🌊</div>
+                        <h4>Pesca Sostenibile</h4>
+                        <p>Metodi di pesca responsabili tra cui la <strong>pesca a canna</strong>, che riduce le catture accessorie. Certificazione <strong>MSC</strong>.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="pillar-card fade-in">
+                        <div class="pillar-icon">🌿</div>
+                        <h4>Ambiente</h4>
+                        <p>Riduzione delle <strong>emissioni di CO₂</strong> lungo tutta la filiera e riduzione di <strong>sprechi alimentari</strong> e idrici.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="pillar-card fade-in">
+                        <div class="pillar-icon">♻️</div>
+                        <h4>Economia Circolare</h4>
+                        <p>Packaging in acciaio <strong>riciclabile al 100%</strong>. Obiettivi di <strong>zero waste</strong> e recupero dei sottoprodotti.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="pillar-card fade-in">
+                        <div class="pillar-icon">🤝</div>
+                        <h4>Responsabilità Sociale</h4>
+                        <p><strong>Benessere dei lavoratori</strong>, sostegno alle comunità costiere e <strong>trasparenza</strong> totale verso i consumatori.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      
+    <section id="attivita" class="py-5 attivita-section">
+      <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag"><i class="bi bi-clipboard-check me-2"></i>Attività</span>
+                <h2 class="section-title">Attività Messe in Campo</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="activity-card fade-in">
+                        <i class="bi bi-search"></i>
+                        <h4>Tracciabilità Completa</h4>
+                        <p>Ogni confezione include informazioni su specie, metodo di pesca, zona FAO e stabilimento di lavorazione.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="activity-card fade-in">
+                        <i class="bi bi-shield-check"></i>
+                        <h4>Certificazioni Internazionali</h4>
+                        <p>Certificazioni MSC e Friend of the Sea per pesca gestita in modo sostenibile e rispettoso degli ecosistemi.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="activity-card fade-in">
+                        <i class="bi bi-envelope-paper"></i>
+                        <h4>Lettera al Consumatore</h4>
+                        <p>In ogni confezione una lettera che spiega l'impegno dell'azienda in termini di qualità e sostenibilità.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="activity-card fade-in">
+                        <i class="bi bi-box-seam"></i>
+                        <h4>Packaging Sostenibile</h4>
+                        <p>Lattine in acciaio riciclabili al 100% e all'infinito. Riduzione continua del peso degli imballaggi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="report" class="py-5 report-section">
+     <div class="container">
+            <div class="text-center mb-5">
+                <span class="section-tag tag-light"><i class="bi bi-file-earmark-arrow-down me-2"></i>Download</span>
+                <h2 class="section-title text-white">Report di Sostenibilità</h2>
+                <div class="section-divider divider-light"></div>
+            </div>
+            <div class="row g-4" id="reports-container">
+                <div class="col-md-6 col-lg-4">
+                    <div class="report-card fade-in">
+                        <span class="report-year">2023</span>
+                        <h3>Report di Sostenibilità 2023</h3>
+                        <p>Ultimo report di sostenibilità di General Conserve S.p.A. (Asdomar). Contiene dati su pesca sostenibile, impatto ambientale, economia circolare e impegno sociale lungo tutta la filiera ittica.</p>
+                        <ul class="report-highlights">
+                            <li><i class="bi bi-check-circle-fill"></i>Pesca sostenibile e tracciabilità completa della filiera</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Riduzione dell'impatto ambientale e delle emissioni CO₂</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Packaging in acciaio riciclabile al 100%</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Benessere dei lavoratori e supporto alle comunità costiere</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="reports/report-2023.pdf" download class="report-download-btn">
+                                <i class="bi bi-download"></i>Scarica Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="report-card fade-in">
+                        <span class="report-year">2022</span>
+                        <h3>Report di Sostenibilità 2022</h3>
+                        <p>Contiene dati su pesca sostenibile, impatto ambientale, economia circolare e impegno sociale lungo tutta la filiera ittica.</p>
+                        <ul class="report-highlights">
+                            <li><i class="bi bi-check-circle-fill"></i>Certificazioni MSC e Friend of the Sea</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Riduzione emissioni CO₂ nella filiera</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Progetti di tutela della biodiversità marina</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Coinvolgimento attivo degli stakeholder</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="reports/report-2022.pdf" download class="report-download-btn">
+                                <i class="bi bi-download"></i>Scarica Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="report-card fade-in">
+                        <span class="report-year">2021</span>
+                        <h3>Report di Sostenibilità 2021</h3>
+                        <p>Il documento illustra le iniziative di General Conserve per una pesca più responsabile, il rispetto degli ecosistemi marini e la trasparenza verso il consumatore.</p>
+                        <ul class="report-highlights">
+                            <li><i class="bi bi-check-circle-fill"></i>Trasparenza nella filiera del tonno</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Promozione della pesca a canna (pole & line)</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Economia circolare e riduzione degli sprechi</li>
+                            <li><i class="bi bi-check-circle-fill"></i>Lettera al consumatore in ogni confezione</li>
+                        </ul>
+                        <div class="mt-auto">
+                            <a href="reports/report-2021.pdf" download class="report-download-btn">
+                                <i class="bi bi-download"></i>Scarica Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="https://www.asdomar.it/en/sustainability-report-and-letter-to-the-consumer/" 
+                   target="_blank" class="btn btn-outline-light btn-lg">
+                    <i class="bi bi-box-arrow-up-right me-2"></i>Pagina ufficiale Asdomar
+                </a>
+            </div>
+        </div>
+    </section>
+      
+    <footer>            
+     <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <h5><i class="bi bi-water me-2"></i>ASDOMAR</h5>
+                        <p class="text-white-50">General Conserve S.p.A.<br>Dal mare alla tavola, con rispetto.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Link Utili</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.asdomar.it" target="_blank" class="footer-link">Sito Ufficiale</a></li>
+                            <li><a href="https://www.msc.org" target="_blank" class="footer-link">MSC</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Project Work 17</h5>
+                        <p class="text-white-50">Tecnologia web per la sostenibilità d'impresa <br> Informatica per le Aziende Digitali (L-31)</p>
+                    </div>
+                </div>
+                <hr class="border-secondary my-4">
+                <p class="text-center text-white-50 mb-0">&copy; 2026 - Project Work 17 - Matr: 0312301341 - Studente: Andrea Orsini</p>
+            </div>
+        </div>
+    </footer>
+    
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+   </script>
+   <script src="js/script.js">
+   </script>
+ </body>
 </html>
